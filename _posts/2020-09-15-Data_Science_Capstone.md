@@ -53,5 +53,15 @@ To get started building the model, I separated the dataset into a training and t
 
 In terms of model, I chose between several classification algorithms. For a structured learning problem with an imbalanced dataset, I chose a few different algorithms to test: Logistic Regression, Random Forest, and Gradient Boost. I had begun with SVM as well, but each run of the SVM algorithm on the dataset took several hours to run and did not provide a performance improvement over any of the others. For Logistic Regression, I used a class-weight of .701 to reflect the imbalanced nature of the data toward the negative class, .701 being the proportion of data belonging to the negative class.  
 
+## Model Performance  
+
+I have included the Jaccard Similarity score for feature for informational purposes, however the key metric selected for the analysis is the F1-score. This is because the F1-score provides a much more robust evaluation of an imbalanced dataset in terms of precision and recall. The performance of the various models appears below.  
+
+![_config.yml](../images/capstone_table.png)  
+
+The logistic regression model performed best overall, with the highest F1-score (tied with Gradient Boost) and the best values for false negative/true negative. The Random Forest model had the lowest F1-score, but provided the highest number of true positives and lowest number of false positives. In this problem, we care more about the false negative rate, since the consequences of encountering (or being in) a serious car accident are inherently more significant than the consequences of a false positive (e.g., changing a route to avoid the accident).  
+
+In sum, I analyzed the relationship between Seattle traffic accidents and details regarding the crash and the driver. I identified the number of pedestrians involved in the crash, the number of cyclists involved in the crash, and the type of collision as the most salient variables that predict the likelihood of a crash being a serious one. The models built can be valuable to motorists as well as logistics companies when it comes to driving strategy, as well as route selection in the event of encountering a crash (e.g., avoid the area if a cyclist was involved in the crash). Finally, the underlying data can serve as a reminder to drivers to pay closer attention to areas where the factors for a serious crash are likely to exist (e.g., where large numbers of pedestrians or cyclists are present).
+
 
 
