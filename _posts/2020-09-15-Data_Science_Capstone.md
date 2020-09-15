@@ -57,7 +57,7 @@ In terms of model, I chose between several classification algorithms. For a stru
 
 I have included the Jaccard Similarity score for feature for informational purposes, however the key metric selected for the analysis is the F1-score. This is because the F1-score provides a much more robust evaluation of an imbalanced dataset in terms of precision and recall. The performance of the various models appears below.  
 
-![_config.yml](../images/capstone_table.png)  
+![_config.yml](../images/capstone_table.PNG)  
 
 The logistic regression model performed best overall, with the highest F1-score (tied with Gradient Boost) and the best values for number of false negative/true negative. The Random Forest model had the lowest F1-score, but provided the highest number of true positives and lowest number of false positives. In this problem, we care more about the false negative rate, since the consequences of encountering (or being in) a serious car accident are inherently more significant than the consequences of a false positive (e.g., changing a route to avoid the accident).  
 
