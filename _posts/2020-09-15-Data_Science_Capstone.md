@@ -5,8 +5,6 @@ published: true
 tags: datascience blog
 ---
 
-# IBM Data Science Capstone Project
-
 This project was completed for the IBM Data Science Capstone Project. The goal was to predict whether or not a car accident is a serious one based on the circumstances of the accident, for example, whether the driver was speeding or whether pedestrians were involved. Traffic accidents remain one of the largest causes of death and serious injury for Americans. In addition to the significant human cost, motorists and logistics companies alike face costly delays due to the impact of these serious crashes on traffic. Lane closures may be required for long periods of time to deal with the results of the accident, for example, to transport injured and/or clear accident wreckage. The goal is to predict the severity of a crash and in so doing, allow drivers to avoid the area, saving time for both motorists and logistics companies.  
 
 ## Data Acquisition and Cleaning  
@@ -17,4 +15,6 @@ I cleaned and formatted the data (e.g, removed duplicates, standardized boolean 
 
 ## Data Analysis  
 
-After the data was cleaned, I began the analysis. There were a number of redundant fields
+After the data was cleaned, I began the analysis. First, I looked at type of collision.  
+
+![_config.yml](../images/crashseveritybytype.png)  
